@@ -13,7 +13,7 @@
 // #define KB_LAYOUT_BEPO
 // #define KB_LAYOUT_BEPOLAR
 // #define KB_LAYOUT_DVORAK
-// #define KB_LAYOUT_ERGOL
+#define KB_LAYOUT_ERGOL
 // #define KB_LAYOUT_ERGLACE
 // #define KB_LAYOUT_QWERTY_INTL
 // #define KB_LAYOUT_QWERTY_LAFAYETTE
@@ -84,7 +84,7 @@
 //  + Escape under the left thumb (direct access)
 // Highly recommended for Vim users, obviously. :-)
 
-// #define VIM_NAVIGATION
+#define VIM_NAVIGATION
 
 // [Experimental]
 // Uncomment the following line to enable the "mod-hold behavior" on the left
@@ -97,7 +97,7 @@
 // Uncomment the following line to enable shift as a pinky HRM.
 // Useful for combined shortcuts, but NOT MEANT to type text!
 
-// #define HRM_SHIFT
+#define HRM_SHIFT
 
 // Uncomment the following line to swap Space and Backspace.
 // Beware: this increases the typing load of the left thumb.

@@ -45,21 +45,21 @@
   #define H_K &hrm RGUI
   #define H_L &hrm LALT
 #else
-  #define H_S &hrm LGUI
+  #define H_S &hrm RALT
   #define H_D &hrm LCTL
-  #define H_F &hrm LALT
-  #define H_J &hrm LALT
   #define H_K &hrm RCTL
-  #define H_L &hrm RGUI
+  #define H_L &hrm RALT
+  #ifdef HRM_SHIFT
+    #define H_F &hrm LSHIFT
+    #define H_J &hrm RSHIFT
+  #else
+    #define H_F &hrm LALT
+    #define H_J &hrm LALT
+  #endif
 #endif
 
-#ifdef HRM_SHIFT
-  #define H_A    &hrm LSHIFT
-  #define H_SEMI &hrm RSHIFT
-#else
-  #define H_A    &kp
-  #define H_SEMI &kp
-#endif
+#define H_A    &hrm LGUI
+#define H_SEMI &hrm RGUI
 
 #if defined HT_HOME_ROW_MODS || defined HT_TWO_THUMB_KEYS
   #define HRM_A    H_A A
