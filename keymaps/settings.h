@@ -22,7 +22,7 @@
 // Uncomment one of the following lines if using a non-Windows host:
 
 // #define MACOS
-// #define LINUX
+#define LINUX
 
 // [Experimental]
 // Uncomment one of the following lines to enable layout emulation:
@@ -46,7 +46,7 @@
 
 // #define HT_NONE
 // #define HT_THUMB_TAPS
-// #define HT_HOME_ROW_MODS  // (default behavior)
+#define HT_HOME_ROW_MODS  // (default behavior)
 // #define HT_TWO_THUMB_KEYS
 
 // Timing is key! Keep the default value if unsure.
