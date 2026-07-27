@@ -23,7 +23,7 @@
       bindings = <
         &kp TAB    &kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y  &kp U  &kp I     &kp O   &kp P      &kp BACKSPACE
         &kp ESCAPE HRM_A  HRM_S  HRM_D  HRM_F  &kp G        &kp H  HRM_J  HRM_K     HRM_L   HRM_SEMI   &kp ENTER
-        &kp LSHIFT &kp Z  &kp X  HRM_C  &kp V  &kp B        &kp N  &kp M  HRM_COMMA &kp DOT &kp FSLH   &kp RSHIFT
+        &kp LSHIFT &kp Z  &kp X  HRM_C  &kp V  &lt MOUSE_LAYER B        &kp N  &kp M  HRM_COMMA &kp DOT &kp FSLH   &kp RSHIFT
                 LTHUMB_TUCK  LTHUMB_HOME  LTHUMB_REACH    RTHUMB_REACH  RTHUMB_HOME  RTHUMB_TUCK
       >;
     };
@@ -100,6 +100,18 @@
         &trans  &kp F5  &kp F6  &kp F7  &kp F8  &none         &none  H_J C_PP    H_K C_MUTE    H_L C_AL_LOCK  H_SEMI PSCRN  &trans
         &trans  &kp F9  &kp F10 &kp F11 &kp F12 &none         &none  &kp C_NEXT  &kp C_VOL_DN  &kp C_BRI_DN   &kp INS       &trans
                                 &trans  &trans  &bootloader   &sys_reset  &trans  &studio_unlock
+      >;
+    };
+
+    // 7. Mouse layer -- held from the base layer's B key
+    //                -- mouse movement on HJKL, scroll above/below, clicks on the right thumb keys
+    mouse_layer: mouse_layer {
+      display-name = "Mouse";
+      bindings = <
+        &trans  &none  &none  &none  &none  &none        &none            &msc SCRL_LEFT  &msc SCRL_RIGHT  &none            &none   &trans
+        &trans  &none  &none  &none  &none  &none        &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_UP     &mmv MOVE_RIGHT  &none   &trans
+        &trans  &none  &none  &none  &none  &trans       &none            &msc SCRL_DOWN  &msc SCRL_UP     &none            &none   &trans
+                              &trans  &trans  &trans      &mkp MCLK  &mkp LCLK  &mkp RCLK
       >;
     };
   };
